@@ -29,7 +29,7 @@
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
     "@babel/core": "^7.27.7",
-    "@babel/eslint-parser": "7.27.1",
+    "@babel/eslint-parser": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
     "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
@@ -40,7 +40,6 @@
     "merge-json-cli": "1.0.4",
     "npm-run-all": "4.1.5",
     "stylelint": "16.19.1",
-    "stylelint-config-standard": "38.0.0",
-    "@adobe/aem-code-sync": "^1.0.0"
+    "stylelint-config-standard": "38.0.0"
   }
 }
