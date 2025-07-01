@@ -1,0 +1,5 @@
+mountpoints:
+  /: https://main--aem-boilerplate-xwalk--icrossing.aem.page/
+
+project: aem-boilerplate-xwalk
+host: adobe.com
