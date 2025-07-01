@@ -214,5 +214,33 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "teaser ix",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "video ix",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "video",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "videoAlt",
+        "label": "Alt Text"
+      }
+    ]
   }
 ]
