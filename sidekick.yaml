@@ -1,0 +1,5 @@
+mountpoints:
+  /: https://integration--aem-boilerplate-xwalk--icrossing.aem.page/
+
+project: aem-boilerplate-xwalk-integration
+host: icrossing.com
