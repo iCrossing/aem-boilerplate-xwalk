@@ -1,5 +1,9 @@
 {
   "mappings": [
-    "/content/eds-stage/:/"
-  ]
+    "/content/eds/:/",
+    "/content/eds/configuration:/.helix/config.json"
+  ],
+  "includes": [
+      "/content/eds/"
+    ]
 }
