@@ -1,0 +1,69 @@
+{
+  "jcr:primaryType": "oak:Unstructured",
+  "oak:index": {
+    "jcr:primaryType": "oak:Unstructured",
+    "damAssetLucene": {
+      "jcr:primaryType": "oak:QueryIndexDefinition",
+      "type": "lucene",
+      "async": "async",
+      "evaluatePathRestrictions": true,
+      "reindex": false,
+      "reindexCount": 1,
+      "propertyNames": [
+        "jcr:content/metadata/dc:title",
+        "jcr:content/metadata/dc:description",
+        "jcr:content/metadata/dc:creator",
+        "jcr:content/metadata/dc:format",
+        "jcr:content/metadata/dc:type",
+        "jcr:content/metadata/dam:size",
+        "jcr:content/metadata/dam:sha1",
+        "jcr:content/metadata/dam:extractedText"
+      ],
+      "includedPaths": [
+        "/content/dam"
+      ],
+      "excludedPaths": [
+        "/content/dam/.*/jcr:content/renditions"
+      ]
+    },
+    "cqPageLucene": {
+      "jcr:primaryType": "oak:QueryIndexDefinition",
+      "type": "lucene",
+      "async": "async",
+      "evaluatePathRestrictions": true,
+      "reindex": false,
+      "reindexCount": 1,
+      "propertyNames": [
+        "jcr:content/jcr:title",
+        "jcr:content/jcr:description",
+        "jcr:content/cq:tags",
+        "jcr:content/cq:template",
+        "jcr:content/sling:resourceType",
+        "jcr:content/cq:lastModified",
+        "jcr:content/cq:lastModifiedBy"
+      ],
+      "includedPaths": [
+        "/content"
+      ],
+      "excludedPaths": [
+        "/content/dam"
+      ]
+    },
+    "ntBaseLucene": {
+      "jcr:primaryType": "oak:QueryIndexDefinition",
+      "type": "lucene",
+      "async": "async",
+      "evaluatePathRestrictions": true,
+      "reindex": false,
+      "reindexCount": 1,
+      "propertyNames": [
+        "jcr:title",
+        "jcr:description",
+        "jcr:created",
+        "jcr:createdBy",
+        "jcr:lastModified",
+        "jcr:lastModifiedBy"
+      ]
+    }
+  }
+} 
