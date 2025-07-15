@@ -1,0 +1,12 @@
+{
+    "jcr:primaryType": "oak:Unstructured",
+    "oak:index": {
+      "jcr:primaryType": "oak:Unstructured",
+      "damAssetLucene": {
+        "jcr:primaryType": "oak:QueryIndexDefinition",
+        "type": "lucene",
+        "async": "async",
+        "propertyNames": ["jcr:content/metadata/dc:title"]
+      }
+    }
+  }
